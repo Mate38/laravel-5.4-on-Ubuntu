@@ -12,7 +12,8 @@ echo "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::installed ZIP-
 sleep 2
 
 # install apache
-sudo apt -y install apache2
+sudo apt -y install apache2 phpmyadmin
+sudo echo 'Include /etc/phpmyadmin/apache.conf' >> /etc/apache2/apache2.conf
 echo "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::installed APACHE"
 sleep 2
 
