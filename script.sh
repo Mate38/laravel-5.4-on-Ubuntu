@@ -8,12 +8,12 @@ sleep 2
 
 # install zip & git
 sudo apt -y install zip git
-echo "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::installed NGINX"
+echo "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::installed ZIP-GIT"
 sleep 2
 
-# install nginx
-sudo apt -y install nginx
-echo "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::installed NGINX"
+# install apache
+sudo apt -y install apache2
+echo "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::installed APACHE"
 sleep 2
 
 
@@ -48,9 +48,9 @@ echo "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::restarted PHP"
 sleep 2
 
 
-# restart nginx
-sudo service nginx restart
-echo "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::restarted NGINX"
+# restart apache
+sudo service apache2 restart
+echo "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::restarted APACHE"
 sleep 2
 
 # do a secure mysql installation
@@ -109,7 +109,7 @@ echo "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::installed comp
 sleep 2
 
 # install laravel installer
-composer global require laravel/installer
+composer global require "laravel/installer"
 echo "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::installed laravel installer"
 sleep 2
 
